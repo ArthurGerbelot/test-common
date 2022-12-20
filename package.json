@@ -1,0 +1,29 @@
+{
+  "name": "@test/common",
+  "description": "Common Repository used to centralize style for multiple app",
+  "version": "1.0.0",
+  "author": "ArthyFiciel <arthur.gerbelot@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.js",
+  "scripts": {
+    "dist:cjs": "tsc --project tsconfig-cjs.json",
+    "dist:esm": "tsc --project tsconfig.json",
+    "dist": "yarn run dist:cjs & yarn run dist:esm"
+  },
+  "peerDependencies": {
+    "@next/font": "^13.0.6",
+    "next": "^13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.4",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@next/font": "^13.0.6",
+    "next": "^13.0.6",
+    "typescript": "4.8.4"
+  }
+}
